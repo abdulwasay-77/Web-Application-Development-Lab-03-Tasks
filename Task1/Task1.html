@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+        .head{
+            color: purple;
+        }
+        .line{
+            color : purple;
+
+        }
+        .prule{
+            color: gray;
+        }
+        .subtitle{
+            color: purple;
+        }
+        .note{
+            background-color: yellow;
+        }
+        .blue{
+            color: blue;
+        }
+        #tealbold{
+        color:teal;
+        font-style: bold;
+        }
+        .box{
+            background-color:  lightblue;
+            border: 2px solid rgb(10, 71, 215);
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>CSS Cascade Puzzle</h1>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="subtitle">
+        <h2>purple: both sheets set h2, and external sheet linked later</h2>
+    </div>
+    <div class="prule">
+        <p>Grey, the Internal P rule</p>
+    </div>
+    <div class="note">
+        <p>Yellow Background with internal .note , border from external .note </p>
+    </div>
+    <br>
+    <div class="note">
+        <p style="color: crimson;">Crimson: an inline style beats both sheets</p>
+    </div>
+    <div class="blue">
+        <p>Blue: A class beats the p element</p>
+    </div>
+    <div id="tealbold">
+        <p>Teal and bold, id beats the class</p>
+    </div>
+    <div class="Imp">
+        <p style="color: orange;">Orange: !important in external sheet beats even the inline</p>
+    </div>
+    <div class="box">
+        <p>Light Blue box: p.box styles the paragraph with style box...</p>
+    </div>
+    <div>
+        <p>but not this div, which also has class box</p>
+
+    </div>
+    <div class="prule">
+        <p>In this grey paragraph this span inherits the grey color and <em style="color: blue;">this em is blue</em></p>
+    </div>
+
+</body>
+</html>

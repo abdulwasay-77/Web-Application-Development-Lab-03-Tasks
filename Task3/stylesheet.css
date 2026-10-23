@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 640px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Box A (content-box by default) */
+.box-a {
+    width: 200px;
+    height: 60px;
+    padding: 15px;
+    border: 4px solid navy;
+    margin: 10px;
+    background-color: #d9e2f3;
+}
+/* Total width: 200 + 15 + 15 + 4 + 4 = 238px */
+/* Total height: 60 + 15 + 15 + 4 + 4 = 98px */
+/* Width with margins: 238 + 10 + 10 = 258px */
+
+/* Box B (border-box) */
+.box-b {
+    box-sizing: border-box;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border: 4px solid navy;
+    margin: 10px;
+    background-color: #d9e2f3;
+}
+/* Total width (border to border): 160px */
+/* Content width: 160 - 10 - 10 - 4 - 4 = 132px */
+
+/* Box C (content-box) */
+.box-c {
+    width: 260px;
+    height: 25px;
+    padding: 8px;
+    border: 4px solid navy;
+    margin: 10px;
+    background-color: #d9e2f3;
+}
+/* Total width: 260 + 8 + 8 + 4 + 4 = 284px */
+
+/* Box D (centred, border-box) */
+.box-d {
+    box-sizing: border-box;
+    width: 250px;
+    height: 70px;
+    padding: 15px;
+    border: 4px solid navy;
+    margin: 15px auto;
+    background-color: #d9e2f3;
+    text-align: center;
+}
+/* Content width: 250 - 15 - 15 - 4 - 4 = 212px */
+/* Content height: 70 - 15 - 15 - 4 - 4 = 32px */
+
+p {
+    line-height: 1.6;
+    margin: 5px 0;
+}
